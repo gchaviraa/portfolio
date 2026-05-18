@@ -112,11 +112,14 @@ a {
   padding: 32px 24px 64px;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .section {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .section-surface {
@@ -124,11 +127,11 @@ a {
   border: 1px solid rgba(148, 163, 184, 0.12);
   backdrop-filter: blur(18px);
   border-radius: 24px;
-  padding: 32px;
+  padding: 48px;
 }
 
 .section-heading {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .section-label {
@@ -147,17 +150,15 @@ a {
 }
 
 .hero {
-  display: grid;
-  gap: 32px;
-  align-items: start;
+  padding: 80px 0 64px;
 }
 
 .hero-copy {
-  max-width: 680px;
+  max-width: 620px;
 }
 
 .eyebrow {
-  margin: 0 0 18px;
+  margin: 0 0 20px;
   font-size: 0.95rem;
   font-weight: 700;
   color: #60a5fa;
@@ -166,36 +167,15 @@ a {
 .hero h1 {
   margin: 0;
   font-size: clamp(3rem, 5vw, 4.5rem);
-  line-height: 0.98;
+  line-height: 1.0;
 }
 
 .hero-description {
-  margin: 24px 0 0;
+  margin: 28px 0 36px;
   color: #cbd5e1;
-  max-width: 680px;
-  font-size: 1.05rem;
-}
-
-.hero-panel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-panel-inner {
-  width: min(420px, 100%);
-  padding: 28px;
-  border-radius: 24px;
-  background: rgba(15, 23, 42, 0.95);
-  border: 1px solid rgba(79, 70, 229, 0.18);
-  box-shadow: var(--shadow);
-}
-
-.hero-panel-inner p {
-  margin: 0;
-  text-align: center;
-  color: #e2e8f0;
-  font-weight: 600;
+  max-width: 520px;
+  font-size: 1.1rem;
+  line-height: 1.75;
 }
 
 .btn {
@@ -385,11 +365,6 @@ a {
 }
 
 @media (min-width: 860px) {
-  .hero {
-    grid-template-columns: 1.1fr 0.9fr;
-    align-items: center;
-  }
-
   .contact-layout {
     grid-template-columns: 1fr 1.1fr;
   }
